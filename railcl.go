@@ -21,20 +21,6 @@ type RailCL struct {
 	} `xml:"devDate"`
 	OrgGILvl string `xml:"orgGILvl"`
 	Vis      string `xml:"vis"`
-	Loc      struct {
-		Text  string `xml:",chardata"`
-		Curve struct {
-			Text     string `xml:",chardata"`
-			ID       string `xml:"id,attr"`
-			SrsName  string `xml:"srsName,attr"`
-			Segments struct {
-				Text              string `xml:",chardata"`
-				LineStringSegment struct {
-					Text    string `xml:",chardata"`
-					PosList string `xml:"posList"`
-				} `xml:"LineStringSegment"`
-			} `xml:"segments"`
-		} `xml:"Curve"`
-	} `xml:"loc"`
+	Loc      Loc `xml:"loc"`
 	Type string `xml:"type"`
 }

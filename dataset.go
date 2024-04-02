@@ -1,4 +1,7 @@
-// Dataset was generated automatically by zek 0.1.23. DO NOT EDIT.
+package fgdgmlschema
+
+import "encoding/xml"
+
 type Dataset struct {
 	XMLName        xml.Name `xml:"Dataset"`
 	Text           string   `xml:",chardata"`
