@@ -21,6 +21,6 @@ type WStrL struct {
 	} `xml:"devDate"`
 	OrgGILvl string `xml:"orgGILvl"`
 	Vis      string `xml:"vis"`
-	Loc      Loc `xml:"loc"`
-	Type string `xml:"type"`
+	Loc      Loc    `xml:"loc"`
+	Type     string `xml:"type"`
 }

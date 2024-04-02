@@ -20,7 +20,7 @@ type Cntr struct {
 		TimePosition string `xml:"timePosition"`
 	} `xml:"devDate"`
 	OrgGILvl string `xml:"orgGILvl"`
-	Loc      Loc `xml:"loc"`
-	Type string `xml:"type"`
-	Alti string `xml:"alti"`
+	Loc      Loc    `xml:"loc"`
+	Type     string `xml:"type"`
+	Alti     string `xml:"alti"`
 }

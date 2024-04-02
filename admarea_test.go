@@ -1,25 +1,11 @@
 package fgdgmlschema
 
 import (
-//    "testing"
-    "encoding/xml"
+	"encoding/xml"
 
-    "fmt"
+	"fmt"
 )
-/*
-func TestAdmArea(t *testing.T) {
-	var dataset Dataset
-	data := testAdmArea_data()
-	err := xml.Unmarshal([]byte(data), &dataset)
-	if err != nil {
-		panic(err)
-	}
-	// fmt.Printf("%+v\n", sr)
-	for i,a := range dataset.AdmArea {
-		fmt.Printf("%d %s %s %v\n", i,a.Name,a.OrgGILvl,a.Area)
-	}
-}
-*/
+
 func ExampleAdmArea() {
 	var dataset Dataset
 	data := testAdmArea_data()
@@ -28,15 +14,13 @@ func ExampleAdmArea() {
 		panic(err)
 	}
 	// fmt.Printf("%+v\n", sr)
-	for i,a := range dataset.AdmArea {
-		fmt.Printf("%d %s %s %v\n", i,a.Name,a.OrgGILvl,a.Area)
+	for i, a := range dataset.AdmArea {
+		fmt.Printf("%d %s %s %v\n", i, a.Name, a.OrgGILvl, a.Area)
 	}
 	// Output:
 	// 0 久留米市 25000 {[[130.63133 33.35284] [130.63103 33.35322] [130.63016 33.35428]]}
-        // 1 大刀洗町 25000 {[[130.6283 33.358162] [130.62845 33.35779]]}
+	// 1 大刀洗町 25000 {[[130.6283 33.358162] [130.62845 33.35779]]}
 }
-
-
 
 func testAdmArea_data() string {
 	return `<?xml version="1.0" encoding="UTF-8"?>

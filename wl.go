@@ -20,6 +20,6 @@ type WL struct {
 		TimePosition string `xml:"timePosition"`
 	} `xml:"devDate"`
 	OrgGILvl string `xml:"orgGILvl"`
-	Loc      Loc `xml:"loc"`
-	Type string `xml:"type"`
+	Loc      Loc    `xml:"loc"`
+	Type     string `xml:"type"`
 }

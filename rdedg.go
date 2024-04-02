@@ -19,9 +19,9 @@ type RdEdg struct {
 		ID           string `xml:"id,attr"`
 		TimePosition string `xml:"timePosition"`
 	} `xml:"devDate"`
-	OrgGILvl string `xml:"orgGILvl"`
-	Vis      string `xml:"vis"`
-	Loc      Loc `xml:"loc"`
+	OrgGILvl  string `xml:"orgGILvl"`
+	Vis       string `xml:"vis"`
+	Loc       Loc    `xml:"loc"`
 	Type      string `xml:"type"`
 	AdmOffice string `xml:"admOffice"`
 }

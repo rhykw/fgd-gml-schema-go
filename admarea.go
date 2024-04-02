@@ -22,7 +22,7 @@ type AdmArea struct {
 	OrgGILvl string `xml:"orgGILvl"`
 	Vis      string `xml:"vis"`
 	Area     Area   `xml:"area"`
-	Type    string `xml:"type"`
-	Name    string `xml:"name"`
-	AdmCode string `xml:"admCode"`
+	Type     string `xml:"type"`
+	Name     string `xml:"name"`
+	AdmCode  string `xml:"admCode"`
 }

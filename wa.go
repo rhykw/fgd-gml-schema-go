@@ -21,5 +21,5 @@ type WA struct {
 	} `xml:"devDate"`
 	OrgGILvl string `xml:"orgGILvl"`
 	Area     Area   `xml:"area"`
-	Type string `xml:"type"`
+	Type     string `xml:"type"`
 }
